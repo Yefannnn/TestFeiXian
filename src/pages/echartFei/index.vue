@@ -2,6 +2,7 @@
   <h3 style="text-align: center">基于坐标轴的飞线实验</h3>
   <div id="main" style="width: 1200px; height: 800px"></div>
   <div id="container"></div>
+  <router-view></router-view>
 </template>
 <script setup>
 // 将echarts 导入
