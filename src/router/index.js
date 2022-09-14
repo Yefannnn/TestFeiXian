@@ -3,7 +3,7 @@ import {createRouter,createWebHashHistory} from 'vue-router'
 const routes = [
     {
         path:'/',
-        redirect:'/testTreeAndTableTask'
+        redirect:'/testGraphChart'
     },
     {
         path:'/geoMapTask',
@@ -56,6 +56,15 @@ const routes = [
     },{
         path:'/testTreeAndTableTask',
         component:()=>import('@/pages/TreeAndTable/index.vue')
+    },{
+        path:'/testTableSlotAndX6',
+        component:()=>import('@/pages/TableAndX6/index.vue')
+    },{
+        path:'/testTreeCustom',
+        component:()=>import ('@/pages/TreeCustom/index.vue')
+    },{
+        path:'/testGraphChart',
+        component:()=>import('@/pages/GraphChart/index.vue')
     }
 ]
 
