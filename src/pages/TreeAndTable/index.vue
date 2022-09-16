@@ -90,13 +90,13 @@ const defaultProps = {
 }
 
 // 表格自定义类名
-const RenderFun = (h, { node, data, store }) => {
-  return (
-    <span>
-      <span>{data.label}</span>
-    </span>
-  )
-}
+// const RenderFun = (h, { node, data, store }) => {
+//   return (
+//     <span>
+//       <span>{data.label}</span>
+//     </span>
+//   )
+// }
 
 // 表格数据
 // const tableData = ref(null)

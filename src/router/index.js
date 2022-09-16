@@ -3,7 +3,7 @@ import {createRouter,createWebHashHistory} from 'vue-router'
 const routes = [
     {
         path:'/',
-        redirect:'/testGraphChart'
+        redirect:'/GraphOfTime'
     },
     {
         path:'/geoMapTask',
@@ -65,6 +65,9 @@ const routes = [
     },{
         path:'/testGraphChart',
         component:()=>import('@/pages/GraphChart/index.vue')
+    },{
+        path:'/GraphOfTime',
+        component:()=>import ('@/pages/GraphToTime/index.vue')
     }
 ]
 
