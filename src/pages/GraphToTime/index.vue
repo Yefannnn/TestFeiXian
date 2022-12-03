@@ -1,5 +1,5 @@
 <template>
-  <div id="main" style="width: 1200px; height: 800px"></div>
+  <div id="main" style="width: 400px; height: 240px"></div>
 </template>
 
 <script setup>
@@ -99,6 +99,14 @@ const initEcharts = () => {
     }
   ]
   let links = [
+    {
+      source: 0,
+      target: 1,
+      lineStyle: {
+        width: 7,
+        color: '#607fda'
+      }
+    },
     {
       source: 1,
       target: 2,

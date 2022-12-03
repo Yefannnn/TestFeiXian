@@ -3,7 +3,7 @@ import {createRouter,createWebHashHistory} from 'vue-router'
 const routes = [
     {
         path:'/',
-        redirect:'/GraphOfTime'
+        redirect:'/envVarAndURL'
     },
     {
         path:'/geoMapTask',
@@ -68,6 +68,89 @@ const routes = [
     },{
         path:'/GraphOfTime',
         component:()=>import ('@/pages/GraphToTime/index.vue')
+    },{
+        path:'/flexGroup',
+        component:()=>import('@/pages/flexGroup/indexParentCom.vue')
+    },{
+        path:'/lineGroup',
+        component:()=>import('@/pages/lineGroup/index.vue')
+    },{
+        path:'/BaiduMapInit',
+        component:()=>import('@/pages/BaiduMap/index.vue')
+    },{
+        path:'/collapseTest',
+        component:()=>import('@/pages/collapseTest/index.vue')
+    },{
+        path:'/rightClickMuem',
+        component:()=>import('@/pages/rightClick/index.vue')
+    },{
+          path:'/vuexToActive',
+          component:()=>import('@/pages/VuexToActive/index.vue')
+    },{
+        path:'/x6linkPort',
+        component:()=>import('@/pages/X6LinkPort/index.vue')
+    },{
+        path:'/propsOfNode',
+        component:()=>import('@/pages/propsOfNode/index.vue')
+    },{
+    path:'/margeCol',
+    component:()=> import('@/pages/mergeCol/index.vue')
+    },{
+        path:'/mergeColPro',
+        component:()=>import('@/pages/mergeColPro/index.vue')
+    },{
+        path:'/Graphflow',
+        component:()=>import('@/pages/GraphFlow/index.vue')
+    },{
+        path:'/home',
+        name:'home',
+        component:()=>import('@/pages/home/home.vue'),
+        redirect:'/homeRight',
+        children:[
+            {
+                path:'/homeLeft',
+                name:'homeLeft',
+                component:()=>import('@/pages/home/homeLeft.vue'),
+                children:[
+                    {
+                        path:'/homeRight',
+                        name:'homeRight',
+                        component:()=>import('@/pages/home/homeRight.vue')
+                    }
+                ]
+            }
+        ]
+    },{
+        path:'/routeTest',
+        component:()=>import('@/pages/routeTest/index.vue')
+    },
+    {
+        path:'/dhtmlxGanttTask',
+        component:()=>import('@/pages/Gantt/index.vue')
+    },{
+        path:'/mutualTask',
+        component:()=>import('@/pages/mutual/index.vue')
+    },{
+        path:'/yangyangTask',
+        component:()=>import('@/pages/yangYask/index.vue')
+    },
+    {
+        path:'/selectAndTreeTask',
+        component:()=>import('@/pages/selectAndTreeTask/index.vue')
+    },{
+        path:'/cards',
+        component:()=>import('@/pages/cards/index.vue')
+    },
+    {
+        path:'/asyncComTask',
+        component:()=>import('@/pages/asyncComTask/index.vue')
+    },
+    {
+        path:'/iframeWork',
+        component:()=>import('@/pages/iframeWork/index.vue')
+    },{
+        path:'/envVarAndURL',
+        component:()=>import('@/pages/envVarAndURL/index.vue')
     }
 ]
 
